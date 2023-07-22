@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Cupcakes{% endblock %}
+
+{% block content %}
+
+<div class="container text-center">
+    <h1>Check out our Cupcakes!</h1>
+
+    <ul id="cupcake-list"></ul>
+    
+</div>
+
+<div class="container text-center">
+    <h2>Add a new Cupcake!</h2>
+
+    <form action="" id="new-cupcake-form">
+        <div>
+            <label for="form-flavor">Flavor: </label>
+            <input type="text" name="flavor" id="form-flavor" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-size">Size: </label>
+            <input type="text" name="size" id="form-size" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-rating">Rating: </label>
+            <input type="text" name="rating" id="form-rating" class="form-control">
+        </div>
+
+        <div>
+            <label for="form-image">Image: </label>
+            <input type="text" name="image" id="form-image" class="form-control">
+        </div>
+
+        <button class="btn btn-lg btn-primary mt-2">Add!</button>
+    </form>
+</div>
+
+{% endblock %}
