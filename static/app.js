@@ -6,7 +6,7 @@ function generateCupcakeHTML(cupcake) {
         <div data-cupcake-id=${cupcake.id}>
             <p>
                 ${cupcake.flavor} / ${cupcake.size} / ${cupcake.rating}
-                <button class="delete-button">X</button>
+                <button class="delete-button btn btn-danger btn-sm">X</button>
             </p>
             <img class="cupcake-img" src="${cupcake.image}" alt="(no image provided)">
         </div>
