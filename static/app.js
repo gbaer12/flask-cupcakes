@@ -3,12 +3,16 @@ const BASE_URL = 'http://127.0.0.1:5000/api';
 // Create HTML for each cupcake
 function generateCupcakeHTML(cupcake) {
     return `
-        <div data-cupcake-id=${cupcake.id}>
-            <p>
-                ${cupcake.flavor} / ${cupcake.size} / ${cupcake.rating}
-                <button class="delete-button btn btn-danger btn-sm">X</button>
-            </p>
+        <div class="card" style="width: 15rem;" data-cupcake-id=${cupcake.id}>
             <img class="cupcake-img" src="${cupcake.image}" alt="(no image provided)">
+            <div class="card-body">
+            </div>
+            <ul class="list-group list-group-flush>
+                <li class="list-group-item"><b> Flavor: ${cupcake.flavor}</b></li>
+                <li class="list-group-item"> Size: ${cupcake.size}</li>
+                <li class="list-group-item">Rating: ${cupcake.rating} / 10</li>
+            </ul>
+                <button class="delete-button btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to DELETE this tag?')">X</button>
         </div>
     `;
 }
